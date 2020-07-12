@@ -26,15 +26,17 @@ function sortArr(comparator, array)
   var min;
 
   for (var i = 0; i < length; i++)
-  {
+  { //set min to this position
     min = i;
     for (var j = i+1; j< length; j++)
     {
+      //check rest of array to see if smaller
       if (comparator(array[j], array[min]))
       {
         min = j
       }
     }
+    //if min isnt in pos swap
     if (i !=min)
     {
       var temp = array[i];
@@ -130,22 +132,22 @@ function clubComparator(student1, student2) {
   }
   //now build out the special ordering
   //improv
-  else if (club1case_insensitive == 'improv' && club2case_insensitive != 'improv')
+  else if (student1.club.toLowerCase() == "improv" && student2.club.toLowerCase() != "improv")
   {
     return true;        //if the second user is NOT improv then the first one is greater
   }
   //cat
-  else if (club1case_insensitive == 'cat' && club2case_insensitive != 'cat')
+  else if (student1.club.toLowerCase() == "cat" && student2.club.toLowerCase() != "improv" && student2.club.toLowerCase() != "cat")
   {
     return true;       //if the second user is NOT cat then the first one is true
   }
   //art
-  else if (club1case_insensitive == 'art' && club2case_insensitive != 'art')
+  else if (student1.club.toLowerCase() == "art" && student2.club.toLowerCase() != "improv" && student2.club.toLowerCase()!= "cat")
   {
     return true;      //if the second user is NOT art then return true
   }
   //guitar
-  else if (club1case_insensitive == 'guitar' && club2case_insensitive != 'guitar')
+  else if (student1.club.toLowerCase() == "guitar" && student2.club.toLowerCase() != "improv" && student2.club.toLowerCase()!= "cat" && student2.club.toLowerCase()!= "art")
   {
     return true;      //if the second user is NOT guitar then return true
   }
@@ -170,13 +172,13 @@ function logMe(sortedArray, length, bool)
   if (bool == 0)
   for (var z = 0; z < length; z++)
   {
-    console.log(closureArray[z].name + "\t" + closureArray[z].major + "\t" + closureArray[z].yearInSchool);
+    console.log(closureArray[z].name + " - " + closureArray[z].major + " - " + closureArray[z].yearInSchool);
   }
   else if (bool == 1)
   {
     for (var z = 0; z < length; z++)
     {
-      console.log(closureArray[z].name + "\t" + closureArray[z].major + "\t" + closureArray[z].yearInSchool + "\t" + closureArray[z].club);
+      console.log(closureArray[z].name + " - " + closureArray[z].major + " - " + closureArray[z].yearInSchool + " - " + closureArray[z].club);
     }
   }
 }
