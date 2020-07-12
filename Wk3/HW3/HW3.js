@@ -19,37 +19,31 @@ var students = [
 and an array of objects appropriate for that comparator and it will return a new array
 which is sorted with the largest object in index 0 and the smallest in the last index*/
 //we will use a basic SELECTION sort which swaps the smallest element with the first element
-//WORKS CITED: https://www.geeksforgeeks.org/selection-sort/ used basic algorithm found here
+//WORKS CITED: https://humanwhocodes.com/blog/2009/09/08/computer-science-in-javascript-selection-sort/ used basic algorithm found here
 function sortArr(comparator, array)
 {
-  for(var i =0;i<array.length -1; i++)
+  var length = array.length;
+  var min;
+
+  for (var i = 0; i < length; i++)
   {
-    for(var j = 0; j<array.length-i-1; j++)
+    min = i;
+    for (var j = i+1; j< length; j++)
     {
-      (comparator(array[j], array[j+1]))? "" : shuffle(array, j);
+      if (comparator(array[j], array[min]))
+      {
+        min = j
+      }
+    }
+    if (i !=min)
+    {
+      var temp = array[i];
+      array[i] = array[min];
+      array[min] = temp;
     }
   }
-  var returnArr = [];
-  var x = 0;
-  for(var i in array)
-  {
-    returnArr[x] = array[i];
-    x++;
-  }
-return returnArr;
+  return array;
 }
-
-function shuffle(array, i){
-
-var obj = array[i];
-
-array[i] = array[i+1];
-
-array[i+1] = obj;
-
-}
-
-
 
 /* A comparator takes two arguments and uses some algorithm to compare them. If the first
 argument is larger or greater than the 2nd it returns true, otherwise it returns false.
@@ -103,6 +97,7 @@ function majorComparator(student1, student2) {
     return false;     //compares and returns false if not true
   }
   */
+  //return exComparator(student1.major.toLowerCase(), student2.major.toLowerCase())
   return exComparator(student1case_insensitive, student2case_insensitive);
 
 }
