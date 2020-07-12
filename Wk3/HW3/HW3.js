@@ -147,7 +147,7 @@ function clubComparator(student1, student2) {
     return true;      //if the second user is NOT art then return true
   }
   //guitar
-  else if (student1.club.toLowerCase() == "guitar" && student2.club.toLowerCase() != "improv" && student2.club.toLowerCase()!= "cat" && student2.club.toLowerCase()!= "art")
+  else if (student1.club.toLowerCase() == "guitar" && student2.club.toLowerCase() != "improv" && student2.club.toLowerCase()!= "cat" && student2.club.toLowerCase()!= "art" && student2.club.toLowerCase()!= "guitar")
   {
     return true;      //if the second user is NOT guitar then return true
   }
