@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "UTF-8" />
+  <title>A5 Assignment</title>
+  <link rel = "stylesheet" href="styles.css" type = "text/css" />
+</head>
+<body>
+<h1>A5: Ajax Interactions: </h1>
+<body>
+<h2>Form 1:</h2>
+  <section>
+    <form id = "weather" method = "get">
+      <fieldset>
+        <legend>GET Open Weather Map API</legend>
+        <p>Enter one of the following:</p>
+        <fieldset>
+            <!GET FORM FOR ZIP & COUNTRY>
+            <legend>Zip and Country</legend>
+            <p>Enter a Zip code and Country Code:</p>
+            <label for = "ZIP_CODE">Enter City:</label>
+            <input type = "text" name = "zip_input" id = "ZIP_CODE" placeholder = "Zip">
+            <label for = "COUNTRY_CODE">Enter Country</label>
+            <input type = "text" name = "country_input" id = "COUNTRY_CODE" placeholder = "Country">
+            <input type = "submit" id = "getZipSubmitA">
+
+        </fieldset>
+        <p>OR</p>
+        <fieldset>
+          <!GET FORM FOR CITY & COUNTRY>
+          <legend>City and Country</legend>
+          <p>Enter a City and Country:</p>
+          <label for = "CITY_NAME">Enter City:</label>
+          <input type = "text" name = "zip_input" id = "CITY_NAME" placeholder = "City">
+          <label for = "COUNTRY_CODE">Enter Country</label>
+          <input type = "text" name = "country_input" id = "COUNTRY_CODE" placeholder = "Country">
+          <input type = "submit" id = "getCitySubmitB">
+        </fieldset>
+    </form>
+    <div>
+      <!RESULTS FOR GET FORMS>
+      <h3>The weather for the location you entered:</h3>
+      <ul>
+        <li><span>City: </span><span id = "cityFound"></span></li>
+        <li><span>Weather Forecast: </span><span id = "forecast"></span></li>
+        <li><span>Temp: </span><span id = "temp"></span></li>
+      </ul>
+    </div>
+  </section>
+</body>
+<script src = "A5Form1.js"></script>
+</html>
