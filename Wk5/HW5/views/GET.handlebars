@@ -1,0 +1,20 @@
+<h1>GET Request Received</h1>
+<!create a table and fill it if there is data>
+<table>
+	{{#if dataList.length}}
+		<tr>
+			<th>inputParam Name</th>
+      <th>|</th>
+			<th>inputParam Value</th>
+		</tr>
+	{{/if}}
+	{{#each dataList}}
+		<tr>
+			<td>{{this.name}}</td>
+      <th>
+        |
+      </th>
+			<td>{{this.value}}</td>
+		</tr>
+	{{/each}}
+</table>

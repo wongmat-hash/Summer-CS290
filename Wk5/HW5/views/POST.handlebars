@@ -1,0 +1,44 @@
+<h1>POST Request Received</h1>
+<!display stuff if the list has contents>
+<!first display the query string contents>
+<!this is exact copy of the GET request handlebars>
+{{#if queryList.length}}
+	<h2>GET Requests:</h2>
+	<table>
+		<tr>
+			<th>inputParam Name</th>
+      <th>|</th>
+			<th>inputParam Value</th>
+		</tr>
+		{{#each queryList}}
+			<tr>
+				<td>{{this.name}}</td>
+        <th>|</th>
+				<td>{{this.value}}</td>
+			</tr>
+		{{/each}}
+	</table>
+{{/if}}
+<!now all the query stuff should be on the list if none then nothing will appear>
+<!here we check now for the body requests for POST>
+{{#if bodyList.length}}
+	<h2>POST Requests:</h2>
+	<table>
+		<tr>
+			<th>Parameter Name</th>
+      <th>
+        |
+      </th>
+			<th>Parameter Value</th>
+		</tr>
+		{{#each bodyList}}
+			<tr>
+				<td>{{this.name}}</td>
+        <th>
+          |
+        </th>
+				<td>{{this.value}}</td>
+			</tr>
+		{{/each}}
+	</table>
+{{/if}}
