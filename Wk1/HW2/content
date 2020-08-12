@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" type="text/css" href ="style.css">
+</head>
+
+<body>
+	<table>
+		<!This is our table 6x6>
+		<caption>Who wins? Cell content indicates status of the row entry</caption>
+		<tr>
+		<th>		</th>
+		<th>Godzilla</th>
+		<th>Batman</th>
+		<th>Shaq</th>
+		<th>Aaron Carter</th>
+		<th>Abe Lincoln</th>
+		</tr>
+
+		<!fill in the table from  left to right first row. These will be green>
+		<tr>
+		<td bgcolor="MediumSeaGreen"><i>Godzilla</i></td>
+		<td bgcolor="MediumSeaGreen"><font color = "Red">N/A</font></td>
+		<td bgcolor="MediumSeaGreen">Minor Loss</td>
+		<td bgcolor="MediumSeaGreen"><font color = "Blue">Loss</font></td>
+		<td bgcolor="MediumSeaGreen">Unknown</td>
+		<td bgcolor="MediumSeaGreen">Unknown</td>
+		</tr>
+
+		<!fill in the table 2nd row left to right these will be blue>
+		<tr>
+		<td bgcolor="DodgerBlue"><i>Batman</i></td>
+		<!red font for this next one>
+		<td bgcolor="DodgerBlue"><font color = "Red">Minor Win</font></td>
+		<td bgcolor="DodgerBlue">N/A</td>
+		<!blue font for this next one>
+		<td bgcolor ="DodgerBlue"><font color = "Blue">Total Victory</font></td>
+		<td bgcolor ="DodgerBlue">Total Victory</td>
+		<td bgcolor ="DodgerBlue">Total Loss</td>
+		</tr>
+
+		<!fill in the table 3rd row left to right these will be green>
+		<tr>
+		<td bgcolor="MediumSeaGreen"><i>Shaq</i></td>
+		<!red font for this next one>
+		<td bgcolor="MediumSeaGreen"><font color = "Red">Win</font></td>
+		<td bgcolor="MediumSeaGreen">Total Loss</td>
+		<!blue font for this next one>
+		<td bgcolor="MediumSeaGreen"><font color = "Blue">N/A</font></td>
+		<td bgcolor="MediumSeaGreen">Minor Loss</td>
+		<td bgcolor="MediumSeaGreen">Unknown</htd>
+		</tr>
+
+		<!fill in the table 4th row left to right these will be blue >
+		<tr>
+		<td bgcolor="DodgerBlue"><i>Aaron Carter</i></td>
+		<!red font for this next one>
+		<td bgcolor="DodgerBlue"><font color = "Red">Unknown</font></td>
+		<td bgcolor="DodgerBlue">Total Loss</td>
+		<!blue font for this next one>
+		<td bgcolor="DodgerBlue"><font color = "Blue">Minor Loss</font></td>
+		<td bgcolor="DodgerBlue">N/A</td>
+		<td bgcolor="DodgerBlue">Unknown</td>
+		</tr>
+
+		<!fill in the table 5th row from left to right these will be green>
+		<tr>
+		<td bgcolor="MediumSeaGreen"><i>Abe Lincoln</i></td>
+		<!red font for this next one>
+		<td bgcolor="MediumSeaGreen"><font color = "Red">Unknown</font></td>
+		<td bgcolor="MediumSeaGreen">Total Victory</td>
+		<!blue font for this next one>
+		<td bgcolor="MediumSeaGreen"><font color = "Blue">Unknown</font></td>
+		<td bgcolor="MediumSeaGreen">Unknown</td>
+		<td bgcolor="MediumSeaGreen">N/A</td>
+		</tr>
+
+		<!fill in the table with special colspan row a 1x2 and 1x4 no color fill>
+		<tr>
+		<td colspan = "2">Footer 1</td>
+		<td colspan = "4">Footer 2</td>
+		</tr>
+	</table>
+	</body>
+
+<!here is the ordered list with at least 3 entries>
+<ul>
+<li>Best language</li>
+<ul><li>Python</li></ul>
+<li>Wackyist Language</li>
+<ul><li>Haskell</li></ul>
+<li>SEGFAULTiest Language</li>
+<ul><li>C</li></ul>
+</ul>
+
+<!here is our div within a div  with a class called inner content>
+<div>
+	<div class="inner-content">
+		<p>Here is some content</p>
+	</div>
+</div>
+
+<form action ="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method = "get">
+	<fieldset>
+		<legend>Some GET Data</legend>
+		<fieldset>
+			<label>Text Here:
+				<input type = "text" name = "type" size = "30" maxlength="100">
+			</label>
+		</fieldset>
+		<fieldset>
+			<label>Number here:
+				<input type = "number" name = "numerical_input" size = "30" maxlength="100">
+			</label>
+		</legend>
+		</fieldset>
+		<fieldset>
+			<label>Password here:
+				<input type = "password_input" name = "password_input" size = "30" maxlength = "100">
+			</label>
+		</fieldset>
+		<fieldset>
+			<label>Select between:
+				<br />
+				<br />
+				<form>
+					<input type="radio" id="snickers" name="candy" value="snickers">
+					<label for="snickers">Snickers</label><br>
+					<br />
+					<input type="radio" id="skittles" name="candy" value="skittles">
+					<label for="skittles">Skittles</label><br>
+					<br />
+					<input type="radio" id="mentos" name="candy" value="mentos">
+					<label for="mentos">Mentos</label><br>
+					<br />
+					<input type="submit" value="Submit">
+				</form>
+		</fieldset>
+		</legend>
+	</fieldset>
+</form>
+
+<form action ="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method = "post">
+	<fieldset>
+		<legend>Some POST Data</legend>
+		<fieldset>
+			<label>Text Here:
+				<input type = "text" name = "text_input" size = "30" maxlength="100">
+			</label>
+		</fieldset>
+		<fieldset>
+			<label>Number here:
+				<input type = "number" name = "numerical_input" size = "30" maxlength="100">
+			</label>
+		</legend>
+		</fieldset>
+		<fieldset>
+			<label>Password here:
+				<input type = "password_input" name = "password_input" size = "30" maxlength = "100">
+			</label>
+		</fieldset>
+		<fieldset>
+			<label>Select between:
+				<br />
+				<br />
+				<form>
+					<input type="radio" id="snickers" name="candy" value="snickers">
+					<label for="snickers">Snickers</label><br>
+					<br />
+					<input type="radio" id="skittles" name="candy" value="skittles">
+					<label for="skittles">Skittles</label><br>
+					<br />
+					<input type="radio" id="mentos" name="candy" value="mentos">
+					<label for="mentos">Mentos</label><br>
+					<br />
+					<input type="submit" value="Submit">
+				</form>
+		</fieldset>
+		</legend>
+	</fieldset>
+</form>
+
+</html>

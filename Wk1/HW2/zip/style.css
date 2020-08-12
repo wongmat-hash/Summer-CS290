@@ -1,0 +1,31 @@
+table, th, td
+{
+	border: 1px solid black;
+}
+
+
+div
+{
+	height: 50px;
+	padding-top: 20px;
+	align: left;
+	background-color: pink;
+	width: 75%;
+}
+
+.inner-content
+{
+	height: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 0 auto;
+	background-color: DodgerBlue;
+	width: 75%;
+}
+
+p
+{
+	//padding-top: 1%;
+	margin: 0 auto;
+	text-align:center;
+}
