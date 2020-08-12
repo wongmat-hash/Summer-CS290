@@ -1,0 +1,16 @@
+{
+  "name": "getpostchecker",
+  "version": "1.0.0",
+  "description": "Application that will check get and post results",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matthew Wong",
+  "license": "OSU",
+  "dependencies": {
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "forever": "^3.0.0"
+  }
+}

@@ -1,0 +1,25 @@
+input.selected
+{
+  border-color:blue;
+}
+
+
+table
+{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+}
+
+td, th
+{
+  border: 1px solid #red;
+  text-align: left;
+  padding: 5;
+  border-spacing: 2;
+}
+
+tr:nth-child(even)
+{
+  background-color: #dddddd;
+}

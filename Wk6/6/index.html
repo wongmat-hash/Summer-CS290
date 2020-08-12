@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="script.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+<h2 align="center">Completed Exercises</h2>
+<table align='center' id="dataTable">
+  <tr>
+    <th>Name</th>
+    <th>Reps</th>
+    <th>Weight</th>
+    <th>Date</th>
+    <th>Unit</th>
+    <th colspan=2></th>
+  </tr>
+  <tr id="firstRow">
+    <td id="firstRow">Deadlift</td>
+    <td id="reps_firstRow">5</td>
+    <td id="weight_firstRow">60</td>
+    <td id="date_firstRow">Test 4</td>
+    <td id="unit_firstRow">Test 5</td>
+    <td>
+      <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+      <input type="button" id="save_button1" value="Save" class="save" style="display: none;" onclick="save_row('1')">
+    </td>
+    <td>
+  <input type="button" value="Delete" class='delete' onclick="deleteRow('dataTable',this)">
+    </td>
+  </tr>
+  <tr id="secondRow">
+    <td id="name_secondRow">Squats</td>
+    <td id="reps_secondRow">Test 7</td>
+    <td id="weight_secondRow">Test 8</td>
+    <td id="date_secondRow">Test 9</td>
+    <td id="unit_secondRow">Test 10</td>
+    <td><input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+    <input type="button" id="save_button2" value="Save" class="save" style="display: none;" display="none" onclick="save_row('2')">
+    </td>
+    <td>
+    <input type="button" class='delete' value="Delete" onclick="deleteRow('dataTable',this)">
+    </td>
+  </tr>
+  <tr>
+    <td><input type="text" id="new_name"></td>
+    <td><input type="text" id="new_reps"></td>
+    <td><input type="text" id="new_weight"></td>
+    <td><input type="text" id="new_date"></td>
+    <td><input type="text" id="new_unit"></td>
+    <td colspan=2><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>
